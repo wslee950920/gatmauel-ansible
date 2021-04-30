@@ -1,6 +1,11 @@
 ---
 # tasks file for codedeploy
-- name: Installs and starts the AWS CodeDeploy Agent
+- name: Install ruby
+  apt:
+    pkg:
+      - ruby
+
+- name: Download the AWS CodeDeploy Agent install script
   get_url:
     url: https://aws-codedeploy-ap-northeast-2.s3.amazonaws.com/latest/install
     dest: /tmp/install
