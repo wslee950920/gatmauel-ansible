@@ -10,8 +10,8 @@
   mysql_user:
     login_user: root
     login_password: "{{ mysql_root_password }}"
-    name: "{{ mysql_user }}"
-    password: "{{ mysql_user_password }}"
-    priv: "{{ mysql_user_db_name }}.*:ALL,GRANT"
+    name: "{{ mysql_username }}"
+    password: "{{ mysql_password }}"
+    priv: "gatmauel_prod.*:ALL,GRANT"
     host: "{{ rds_endpoint }}"
     state: present
