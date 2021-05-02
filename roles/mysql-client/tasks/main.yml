@@ -1,10 +1,10 @@
 ---
 # tasks file for mysql-client
 
-- name: Install mysql
+- name: Install mysql-client
   apt:
     pkg:
-      - mysql-client
+      - python-pymysql
 
 - name: create a new user
   mysql_user:
