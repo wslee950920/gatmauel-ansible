@@ -13,5 +13,6 @@
     login_host: "{{ rds_endpoint }}"
     name: "{{ mysql_username }}"
     password: "{{ mysql_password }}"
+    host: "%"
     priv: "gatmauel_prod.*:ALL,GRANT"
     state: present
