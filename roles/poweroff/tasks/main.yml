@@ -1,5 +1,0 @@
----
-# tasks file for poweroff
-- name: poweroff
-  ansible.builtin.shell:
-    cmd: poweroff
