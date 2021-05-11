@@ -3,7 +3,7 @@
 - name: Install mysql-client
   apt:
     pkg:
-      - boto
+      - python-boto
 
 - amazon.aws.ec2:
     instance_tags:
