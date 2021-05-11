@@ -2,5 +2,5 @@
 # tasks file for aws-ec2
 - amazon.aws.ec2:
     instance_tags:
-      Name: gatmauel-template
+      name: gatmauel-template
     state: stopped
