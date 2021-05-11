@@ -1,5 +1,10 @@
 ---
 # tasks file for aws-ec2
+- name: Install mysql-client
+  apt:
+    pkg:
+      - boto
+
 - amazon.aws.ec2:
     instance_tags:
       name: gatmauel-template
