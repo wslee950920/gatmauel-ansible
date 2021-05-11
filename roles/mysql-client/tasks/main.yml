@@ -7,6 +7,7 @@
       - python-pymysql
 
 - name: create a new user
+  no_log: True
   mysql_user:
     login_user: root
     login_password: "{{ mysql_root_password }}"
